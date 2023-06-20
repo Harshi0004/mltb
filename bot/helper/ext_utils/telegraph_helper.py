@@ -10,7 +10,7 @@ from bot import LOGGER, bot_loop
 
 class TelegraphHelper:
     def __init__(self, author_name=None, author_url=None):
-        self.telegraph = Telegraph(domain='graph.org')
+        self.telegraph = Telegraph(domain='telegra.ph')
         self.short_name = ''.join(SystemRandom().choices(ascii_letters, k=8))
         self.access_token = None
         self.author_name = author_name
